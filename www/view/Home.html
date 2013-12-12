@@ -1,0 +1,116 @@
+
+
+<style>
+body{
+	background-color:#EBF3FF;
+	color:#000000;
+	
+}
+h5{
+ 	
+ 	font-style:italic;
+}
+.boldFont{
+	font-weight:bold;
+}
+p{
+	font-size:.8em;
+	font-family:Arial,Helvetica,sans-serif;
+	
+}
+
+.centerContent{
+	
+	padding:0px 10px;
+	margin:0px 20px;
+	
+}
+
+.hero-unit h1{
+	font-size:1em;
+}
+
+</style>
+
+<div>
+<nav class="navbar navbar-default" role="navigation" >
+  <div class="navbar-header">
+  	
+	<div class="navbar-brand"><img src="{{responseData.general.logo}}" alt="..." width='25' height='25'>{{responseData.general.name}}</div>
+	
+	<ul  class="nav nav-tabs">
+  
+  		<li><a href="{{responseData.navigation[0].link}}">{{responseData.navigation[0].title}}</a></li>
+  		<li><a href="{{responseData.navigation[1].link}}">{{responseData.navigation[1].title}}</a></li>
+  		<li class="dropdown">
+    		<a class="dropdown-toggle" data-toggle="dropdown" href="{{responseData.navigation[2].link}}">
+      				{{responseData.navigation[2].title}} <span class="caret"></span>
+    		</a>
+    		<ul class="dropdown-menu">
+      		<li><a href="{{responseData.navigation[2].subnav[0].link}}">{{responseData.navigation[2].subnav[0].title}}</a></li>
+  			<li><a href="{{responseData.navigation[2].subnav[1].link}}">{{responseData.navigation[2].subnav[1].title}}</a></li>
+  			</ul>
+  		</li>
+	</ul>
+	
+ </div>
+
+</nav>
+
+<!-- center content -->
+
+<div class="centerContent">
+	<div>
+  		<h5 class="boldFont">{{responseData.modules[1].title}}</h5>
+      	<h5><i>Lorem ipsum dolar</i></h5>
+      	<p>{{responseData.modules[1].subtitle}}</p>
+    
+    	<h5><i>{{responseData.modules[2].title}}</i></h5>
+	
+	</div>
+	
+	<form role="form">
+	<div class="form-group">
+    	<label for="{{responseData.modules[2].fields[0].id}}">{{responseData.modules[2].fields[0].label}}</label>
+   		<input type="{{responseData.modules[2].fields[0].type}}" class="form-control" 
+   		id="{{responseData.modules[2].fields[0].id}}" required="true"
+   		placeholder="{{responseData.modules[2].messages.fname}}">
+  	</div>
+  	<div class="form-group">
+    	<label for="{{responseData.modules[2].fields[1].id}}">{{responseData.modules[2].fields[1].label}}</label>
+    	<input type="{{responseData.modules[2].fields[1].type}}" class="form-control" 
+    	id="{{responseData.modules[2].fields[1].id}}" required="true"
+    	placeholder="{{responseData.modules[2].messages.email}}">
+  	</div>
+  	<div class="form-group">
+    	<label for="country">{{responseData.modules[2].fields[2].label}}</label>
+    	
+    	<select class="form-control" required="true" >
+  			<option>{{responseData.modules[2].fields[2].options[0].text}}</option>
+  			<option>{{responseData.modules[2].fields[2].options[1].text}}</option>
+  			<option>{{responseData.modules[2].fields[2].options[2].text}}</option>
+  			<option>{{responseData.modules[2].fields[2].options[3].text}}</option>
+  			<option>{{responseData.modules[2].fields[2].options[4].text}}</option>
+		</select>
+  	</div>
+  	
+  	
+  	<button type="{{responseData.modules[2].fields[3].type}}" class="btn btn-lg btn-primary">{{responseData.modules[2].fields[3].value}}</button>
+	</form>
+</div>
+	<div class="wrapper">
+      <div class="container">
+        <header class="hero-unit">
+          <h1>This is footer text for ABC company. @Copy right 2013 </h1>
+          <h1><a href="{{responseData.navigation[1].link}}" >{{responseData.navigation[1].title}}</a>	|	
+          <a href="{{responseData.navigation[2].link}}">{{responseData.navigation[2].title}}</a>	|	
+          <a href="#" rel="external">Contact us</a></h1>
+     
+       </header>
+      </div>
+      
+      <div class="push"><!--//--></div>
+    </div>
+    
+</div>
+

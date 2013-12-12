@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html ng-app="testApp">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="styles/index.css" />
+        <link rel="stylesheet" href="styles/vendor/bootstrap.css" >
+        
+        <!-- Angular Library -->
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-resource/angular-resource.min.js"></script>
+        <script src="lib/angular-route/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-touch.min.js"></script>
+        
+        <script type="text/javascript" src="scripts/index.js"></script>
+        
+        <!-- BootStrap Library -->
+        <script src="lib/bootstrap/ui-bootstrap.js"></script>
+        
+        <script src="scripts/app.js"></script>
+		<script src="scripts/dataservice.js"></script>
+		
+		
+		<!-- AngularJS Controllers -->
+		<script type="text/javascript" src="scripts/controllers.js"></script>
+		<script type="text/javascript" src="scripts/controllers/home.js"></script>
+		
+		<!-- Cordova Library -->
+        <script type="text/javascript" src="cordova.js"></script>
+        		
+        <title>ABC Company</title>
+    </head>
+    <body onload="app.initialize()">
+     
+     <div ng-view></div>
+
+    </body>
+</html>
