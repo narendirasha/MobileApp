@@ -54,6 +54,8 @@ a
     }
     
 
+    
+
 <!-- Media queriis for resposive web design--- -->
 
 
@@ -95,8 +97,7 @@ a
       p{font-size:0.6em;}
        a{font-size: 0.8em;}
       
-       
-    }
+       }
     
    
 
@@ -138,28 +139,27 @@ a
   		<h5 class="boldFont">{{responseData.modules[1].title}}</h5>
       	<h5><i>Lorem ipsum dolar</i></h5>
       	<p>{{responseData.modules[1].subtitle}}</p>
-    
-    	<h5><i>{{responseData.modules[2].title}}</i></h5>
 	
 	</div>
 	
 	<form role="form">
+	<h5><i>{{responseData.modules[2].title}}</i></h5>
 	<div class="form-group">
     	<label for="{{responseData.modules[2].fields[0].id}}">{{responseData.modules[2].fields[0].label}}</label>
    		<input type="{{responseData.modules[2].fields[0].type}}" class="form-control" 
-   		id="{{responseData.modules[2].fields[0].id}}" required="true"
+   		id="{{responseData.modules[2].fields[0].id}}" required
    		placeholder="{{responseData.modules[2].messages.fname}}">
   	</div>
   	<div class="form-group">
     	<label for="{{responseData.modules[2].fields[1].id}}">{{responseData.modules[2].fields[1].label}}</label>
     	<input type="{{responseData.modules[2].fields[1].type}}" class="form-control" 
-    	id="{{responseData.modules[2].fields[1].id}}" required="true"
+    	id="{{responseData.modules[2].fields[1].id}}" required
     	placeholder="{{responseData.modules[2].messages.email}}">
   	</div>
   	<div class="form-group">
     	<label for="country">{{responseData.modules[2].fields[2].label}}</label>
     	
-    	<select class="form-control" required="true" >
+    	<select class="form-control" required >
   			<option>{{responseData.modules[2].fields[2].options[0].text}}</option>
   			<option>{{responseData.modules[2].fields[2].options[1].text}}</option>
   			<option>{{responseData.modules[2].fields[2].options[2].text}}</option>
@@ -173,7 +173,7 @@ a
 	</form>
 </div>
 	<div class="wrapper">
-      <div class="container">
+      <div class="navbar navbar-default navbar-fixed-bottom">
         <footer class="hero-unit">
           <h1>This is footer text for ABC company. @Copy right 2013 </h1>
       </footer>
