@@ -123,8 +123,10 @@ angular.module('testApp.controllers').controller('HomeCtrl', function ($rootScop
       }
    ]
 }
-		$scope.responseData = jsonObj;
-		/*var on_success = function(response){
+		//$scope.responseData = jsonObj;
+		
+		//Code to fetch Json data externally...
+		var on_success = function(response){
 			//alert(">> "+response.data.general.logo);
 			$scope.responseData = response.data;
 		};
@@ -138,11 +140,11 @@ angular.module('testApp.controllers').controller('HomeCtrl', function ($rootScop
 	        params: {           
 	            callback: "JSON_CALLBACK" 
 	        }, 
-	        url: "/MobileApp/www/jsondata/data.json"
+	        url: "/jsondata/data.json"
 	    };
 	    
 		$xhr.request(teamsRequestObj).then(on_success, on_failure);
-		*/
+		
 	};
 	
 	$scope.initialize();
