@@ -43,7 +43,7 @@ service('$xhr', function ($q, $rootScope, $http) {
 
             /*$http.defaults.useXDomain = true;*/
             //delete $http.defaults.headers.common["X-Requested-With"];
-			alert("url: "+httpobj.url);
+			//alert("url: "+httpobj.url);
 			
             var httpPromise = $http(httpobj);
             return httpPromise;            
