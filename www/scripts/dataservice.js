@@ -7,8 +7,8 @@ service('$xhr', function ($q, $rootScope, $http) {
     return {
         request: function (o) {
 
-			var host = "";
-			//var host = "http://localhost";
+			//var host = "";
+			var host = "http://localhost";
 			//var host = "http://www.cgrt343.com";
 			o.url = host + o.url;
 			

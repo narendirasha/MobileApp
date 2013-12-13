@@ -123,10 +123,10 @@ angular.module('testApp.controllers').controller('HomeCtrl', function ($rootScop
       }
    ]
 }
-		//$scope.responseData = jsonObj;
+		$scope.responseData = jsonObj;
 		
 		//Code to fetch Json data externally...
-		var on_success = function(response){
+		/*var on_success = function(response){
 			//alert(">> "+response.data.general.logo);
 			$scope.responseData = response.data;
 		};
@@ -144,7 +144,7 @@ angular.module('testApp.controllers').controller('HomeCtrl', function ($rootScop
 	    };
 	    
 		$xhr.request(teamsRequestObj).then(on_success, on_failure);
-		
+		*/
 	};
 	
 	$scope.initialize();
